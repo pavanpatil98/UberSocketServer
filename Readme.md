@@ -3,6 +3,7 @@
 #Client side webocket code for browser
 
 
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,3 +75,4 @@
     </script>
 </body>
 </html>
+```
