@@ -32,7 +32,7 @@ public class TestController {
 
     //Server will send message to client
     //Client is listening on topic/schdeuled & then it will show the message
-    @SendTo("/topic/scheduled")
+    /*@SendTo("/topic/scheduled")
     @Scheduled(fixedDelay = 2000)
     public String sendPeriodicMessage(){
         System.out.println("Executed periodic function");
@@ -50,7 +50,7 @@ public class TestController {
                 .message(request.getMessage())
                 .timeStamp("" + System.currentTimeMillis())
                 .build();
-    }
+    }*/
 
     /*@MessageMapping("/chat/{room}")
     @SendTo("/topic/message/{room}")

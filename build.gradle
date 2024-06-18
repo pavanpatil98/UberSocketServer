@@ -13,6 +13,7 @@ java {
 
 repositories {
 	mavenCentral()
+	mavenLocal()
 }
 
 dependencies {
@@ -22,7 +23,9 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	implementation 'com.example:UberProject-EntityService:0.0.2-SNAPSHOT'
+	implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version: '4.1.1'
+	implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+	implementation 'com.example:UberProject-EntityService:0.0.6-SNAPSHOT'
 }
 
 tasks.named('test') {
